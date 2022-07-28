@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #041723;
+    color:#ACACAC;
+    font-family: 'Poppins', sans-serif;
+    text-align: center; 
+}
+
+img{
+    width: 80%;
+    border-radius: 10px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 578px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+    .img{
+        width: auto;
+    }
+}
